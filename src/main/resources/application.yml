@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: OrderServiceProject
+  port: 8080
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://root:MrYJqJiLKodcDWJjoVahLydSjuZHYFxl@hopper.proxy.rlwy.net:20144/railway
+    username: root
+    password: MrYJqJiLKodcDWJjoVahLydSjuZHYFxl
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  cloud:
+    compatibility-verifier:
+      enabled: false
+
+orchid:
+  service:
+    url: http://localhost:8082
+
+account:
+  service:
+    url: http://localhost:8081
