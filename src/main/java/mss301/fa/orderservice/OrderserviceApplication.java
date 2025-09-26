@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableFeignClients(basePackages = {"mss301.fa.orderservice.service"})
 @ComponentScan(basePackages = {"mss301.fa.orderservice.controller",
-        "mss301.fa.orderservice.service"})
+        "mss301.fa.orderservice.service", "mss301.fa.orderservice.config"})
 @EnableJpaRepositories(basePackages = {"mss301.fa.orderservice.repository"})
 @EntityScan(basePackages = {"mss301.fa.orderservice.entity"})
 public class OrderserviceApplication {
